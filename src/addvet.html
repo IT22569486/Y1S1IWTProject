@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add vet</title>
+    <link rel="stylesheet" href="Addvet.css">
+	<script src="https://kit.fontawesome.com/95b76a116d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">PetsStop<br>Vet portral</div>
+        <ul>
+            <li><a href="adminHome.php">Home</a></li>
+            <li><a href="vetindex.php">Edit</a></li>
+            <li><a href="#">Add vet</a></li>
+        </ul>
+    </div>
+    <br><br><h2>Add new vet detail</h2>
+    <div class="vdform">
+        <form action="submitvet.php" method="post">
+            Vet ID :<br>
+			<input type = "text" name = "VID" id = "VID" placeholder = "V01" pattern = "V[0-9]{2}"  required>
+			<br><br>
+            First name :<br>
+                <input type="text" name="vfname" id="vfname" placeholder="vet first Name" required><br></br>
+            Last name :<br>
+                <input type="text" name="vlname" id="vlname" placeholder="vet last Name" required><br></br>
+            Date of birth :<br> 
+            <div class="date">
+                <input type="date" name="dob" id="dob" required><br><br></div>
+            Address :<br> 
+                <textarea name="addrs" id="addrs" placeholder="address" required></textarea><br><br>
+            Salary :<br>
+                <input type="number" name="sal" id="sal" placeholder="1000000.00" required><br><br>
+            Specialization :<br>
+                <input type="text" name="spec" id="spec" placeholder="Specialization" required><br><br>  
+            Email :<br>
+                <input type="email" name="mail" id="mail" placeholder="abc@gmail.com" required><br><br> 
+				I accept terms & conditions <input type="checkbox" id="checkboxVet"  onclick="enableSubmitAddtVet()"><br><br>
+            <input type="submit" id="SubmitBtn" value="submit" disabled><br><br>        
+        </form>
+		<script>
+         function enableSubmitAddtVet(){
+		if(document.getElementById("checkboxVet").checked){
+        document.getElementById("SubmitBtn").disabled=false;
+		}
+		else{
+        document.getElementById("SubmitBtn").disabled=true;
+		}
+		}
+    </script>
+    </div>
+    <footer>
+            
+        <div class="row">
+        <div class="col">
+        <img src="petlogo.png" class="logo">
+        </div>
+        <div class="col">
+        <h3>Office<div class="underline"><span></span></div></h3>
+        <p>No.458/3</p>
+        <p>Gangarama road,Colombo-03</p>
+        <p class="email">petsstopcare@gmail.com</p>
+        <p>+94 077-4568238</p>
+        <p>+94 011-2956758</p>
+        </div>
+        
+        <div class="col">
+        <h3>Newsletter<div class="underline"><span></span></h3>
+        <div class ="mail">
+          <i class="fa-solid fa-envelope"></i>
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit"><i class="fas fa-arrow-right"></i></button>
+        </div><br>
+    
+        <i class="fab fa-facebook-f fa-2x"></i>
+        <i class="fab fa-instagram fa-2x"></i>
+        <i class="fab fa-whatsapp fa-2x"></i>
+        <i class="fab fa-twitter fa-2x"></i>
+    
+        </div>
+        </div>
+        <hr>
+        <p class="copyright">Easy Tutorials © 2023 - All Rights Reserved</p>
+    </footer>
+    
+</body>
+</html>

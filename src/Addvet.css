@@ -1,0 +1,283 @@
+
+body {
+    background-image: url('pexels-shvets-production-7533324.jpg');
+    background-position:cover;
+    background-size:100%;
+    background-repeat: no-repeat;
+	background-color:black;
+    
+    
+}
+
+.navbar {
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    background-color: #000;
+	border-bottom-left-radius: 60px;
+	background: linear-gradient(#2e3030, #e1dcd8);
+
+}
+
+.navbar .logo {
+    font-size: 36px;
+    font-weight: bold;
+    color: rgb(255, 239, 239);
+    margin-right: 80px;
+	margin-left:40px;
+	
+	
+}
+
+.navbar ul {
+    display: flex;
+    
+}
+
+.navbar ul li {
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+.navbar ul li a {
+    display: block;
+    background-color: #c9baba;
+    color: black;
+    font-family: Arial;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+	border-radius: 30px;
+}
+
+.navbar ul li a:hover {
+    background-color: #9f7474;
+}
+
+h2{
+	color:white;
+	margin-left:65px;
+	
+	
+}
+
+.vdform form {
+    background-color:rgba(0,0,0,0.4);
+	width:40%;
+	padding: 10px;
+	font-size:17px;
+	border-radius:10px;
+	box-shadow:2px 2px 15px rgba(0,0,0,0.3);
+	color:#fff;
+	margin:40px;
+	
+}
+.date{
+    color: aliceblue;
+}
+      
+.vdform form input,textarea {
+      
+      background: transparent;
+      margin-right: 30px;
+      color: #ffffff;
+      margin-right:20px;
+      font-size: 20px;
+}
+.mail {
+  width:100%;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+  border-radius: 25px;
+  border: 1px solid white;
+  
+}
+
+ 
+ .fa-solid.fa-envelope {
+      font-size: 18px;
+      margin-left: 30px;
+      margin-top:6px;
+}  
+.mail input {
+  width: 50%;
+  background: transparent;
+  margin-right: 30px;
+  color: #ccc;
+  border:0;
+  outline: none;
+  margin-right:-20px;
+
+
+}
+
+.mail button {
+  background: transparent;
+  border: 0;
+  outline: none;
+  margin-top:6px;
+  cursor: pointer;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background-color: #00093c;
+  transition: background-color 0.3s ease;
+}
+
+.mail button:hover {
+  background-color:#B2D3C2;
+}
+
+.mail button.fas {
+  font-size: 16px;
+  color: #ccc;
+}
+ 
+    
+  .fab {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+    
+  }
+  
+  .fab:hover {
+    background-color: #B2D3C2;
+  }
+  
+  .col .fab {
+    display: inline-block;
+  }
+  
+  hr
+  {
+      width:90%;
+      border:0;
+      border-bottom:1px solid #ccc;
+      margin:20px auto;
+  }	
+  
+  .copyright
+  {
+      text-align:center;
+      
+  }
+  .underline
+  {
+      width:100%;
+      height:5px;
+      background:#767676;
+      border-radius:3px;
+      position:absolute;
+      top:25px;
+      left:0;
+      overflow:hidden;
+  }
+  .underline span
+  {
+      width:15px;
+      height:100%;
+      background:#fff;
+      border-radius:3px;
+      position:absolute;
+      top:0;
+      left:10px;
+      animation:moving 2s linear infinite;
+  }
+  
+  @keyframes moving
+  {
+      0%
+      {
+      left: -20px;
+      }
+      100%
+      {
+      left: 100%;
+      }
+  }
+  @media (max-width:700px)
+  {
+      footer
+      {
+          bottom:unset;
+      }
+      .col {
+      display:flex;
+      }
+  
+      
+  }
+  *{
+      margin: 0;
+      padding: 0;
+      font-family: 'poppins', sans-serif;
+      box-sizing: border-box;
+  }
+  
+  footer {
+      
+      width: 100%;
+      position:bottom;
+      background: linear-gradient(#2e3030, #e1dcd8);
+      color: #090303;
+      padding: 10px 0 10px 0;
+      border-top-left-radius: 125px;
+      line-height: 20px;
+  }
+  
+  .row {
+      width: 85%;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-between;
+  }
+  
+  .col {
+      flex-basis: 25%;
+      padding: 10px;
+  }
+  
+  .logo {
+      display: flex;
+      margin-bottom: 30px;
+      border: 3px solid black;
+  }
+  
+  .col h3 {
+      width:fit-content;
+      margin-bottom: 40px;
+      position: relative;
+  }
+  
+  .email {
+      width: fit-content;
+      border-bottom: 1px solid #ccc;
+      margin: 20px 0;
+  }
+  
+  ul li {
+      list-style: none;
+      margin-bottom:12px;
+      
+  }
+  
+  ul li a {
+      text-decoration: none;
+      color: white;
+      
+      
+  }

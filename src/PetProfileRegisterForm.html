@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+
+	<title>Pet Registration Form</title>
+	<link rel = "stylesheet" href = "PetProfileRegisterForm.css">
+	<script src = "PetProfileRegisterFormJavaScrpt.js"></script>
+</head>
+
+<body>
+    <div class = "bt1">
+	<a href = "SeeCreatedPetProfiles.php"><button style = "float:right" id = "bt4">View My Pet Profiles</button></a>
+    </div>
+  
+	<div class = "Main">	
+	<div class = "PForm">
+
+	<h3>Create a profile for your pet</h3>
+
+		<form action = "PetProfileRegisterFormGetData.php" method="POST" id = "register">
+			<label>Pet name:</label><br>
+			<input type = "text" name = "PName" id = "PName" placeholder = "Enter pet name" required>
+			<br><br>
+			<label>Species:</label><br>
+		    <select name = "PSpecies" required>
+		        <option value = "Dog" selected>Dog</option>
+	            <option value = "Cat">Cat</option>
+		        <option value = "Bird">Bird</option>
+			    <option value = "Rabbit">Rabbit</option>
+			    <option value = "Horse">Horse</option>
+			    <option value = "Other">Other</option>
+		    </select>
+		    <br><br>
+		    <label>Breed:</label><br>
+			<input type = "text" name = "PBreed" id = "PBreed" placeholder = "Enter breed"required>
+			<br><br>
+			<label>Age:</label><br>
+			<input type = "number" name = "PAge" id = "PAge" placeholder = "Enter age" required>
+			<br><br>
+			<label>Gender:</label><br>
+			<!-- span is used to style texts in a document-->
+			<span id = "Male">Male</span>&nbsp;<input type = "radio" name = "PGender" id = "PGender" value = "Female" checked>&nbsp;&nbsp;&nbsp;&nbsp;
+			<span id = "Female">Female</span>&nbsp;<input type = "radio" name = "PGender" id = "PGender"value = "Male">
+			<br><br>
+			<label>Veterinarian ID:</label><br>
+			<input type = "text" name = "VID" id = "VID" placeholder = "V01" pattern = "V[0-9]{2}"  required>
+			<br><br>
+			<label>More info:</label><br>
+			<textarea name = "PInfo" rows = "5" cols = "30" placeholder="Any more detail about the pet" id = "PDes"></textarea>
+			<br><br>
+			<fieldset style = "background-color:brown;font-family:sans-serif;font-style:big; font-size:15px;">
+			<legend>Terms and conditions</legend>
+			<ul type = "disc">
+				<li>I entered every instructions and medications for my pet's special needs.</li>
+				<br>
+				<li>I give you every right to terminate the service or refuse the service.</li>
+				<br>
+				<li>We provide diligent care, we are not liable for injuries or losses unless due to negligence.</li>
+			</ul>
+			<br><br>
+			</fieldset>
+			<lable>Accept terms and condtions:</lable>
+		    <input type="checkbox" id="checkbox" onclick = "enableButton()" >
+		    <br>
+		    <br>
+			<input type="submit" id = "submit" onclick = "confir()" name = "submit"  disabled >&nbsp;&nbsp;&nbsp;&nbsp;<input type = "reset" id = "reset">
+
+
+		</form>
+	</div>
+	</div>
+  
+
+</body>
+
+
+</html>

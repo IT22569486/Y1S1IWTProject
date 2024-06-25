@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>header</title>
+<link rel="stylesheet" href="header.css">
+</head>
+<body>
+	<nav>
+		<div class="header">
+			<div class="navbar">
+				<div class="logo">PetsStop</div>
+				<ul>
+					<li><a href="home.html">Home</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="faq.html">FAQ</a></li>
+					<li><a href="service.html">Service</a></li>
+				</ul>
+			</div>
+			<div class="search">
+				<input type="search" name="" placeholder="Type to search">
+				<a href="#"><button class="btn">Search</button></a>
+			</div>
+		</div>
+		
+	</nav>
+
+	<script type="text/javascript">
+		window.addEventListener("scroll", function() {
+			var header = document.querySelector(".header");
+			header.classList.toggle("sticky", window.scrollY > 0);
+		});
+	</script>
+</body>
+</html>
+

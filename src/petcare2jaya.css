@@ -1,0 +1,54 @@
+@charset"utf-8";
+
+/*body css*/
+body
+{
+	background-image:url("image/cost-of-care-featured.webp");
+	background-size:cover;
+	font-family: Verdana, sans-serif;
+	margin: 0;
+}
+
+footer{
+
+}
+fieldset{
+	width:90%;
+	padding:10px;
+	margin:10px;
+	background-color:lightblue;
+	background-image:url("side-view-obedient-dog-sitting-white-background_23-2147840968.avif");
+}
+
+div.colm
+{
+	border:2px solid black;
+	float:left;
+	width:30%;
+	padding:10px;
+	margin:10px;
+	height:400px;
+
+	height:400px;
+	overflow-y:scroll;
+}
+div.main:after{
+	content:"";
+	display:table;
+	clear:both;
+}
+img.contactlink
+{
+	width:30px;
+	height:30p;
+}
+
+div.formdiv
+{
+	border:1px solid black;
+	text-align:center;
+}
+button
+{
+	background-color:red;
+}

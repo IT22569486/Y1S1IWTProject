@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Online Pet Care System</title>
+	<link rel="stylesheet"  href="noticeBoard.css" >
+
+</head>
+<body>
+
+<h1>PetsStop.lk</h1><br>
+
+<center>
+
+<h2>Add a Advertisement</h2>
+<center>
+<form action="SubmitAdvertisement.php" class="form1" method="POST">
+	Item Name:
+	<input type="text" name="name" placeholder="Item Name" required><br><br>
+	Description:
+	<textarea type="textarea" name="des"  placeholder="Description" required></textarea><br><br>
+	Unit Price:
+	<input type="text" name="Uprice" placeholder="Unit Price" required><br><br>
+	Mobile:
+	<input type="text" name="contact" placeholder="07XXXXXXXX" pattern="[0-9]{10}" required><br><br>
+	Accept the Advertising terms and conditions <input type="checkbox"id="checkboxAD"  onclick="enableSubmit()"><br><br>
+	<input type="submit" id="submitAD" value="Submit" class= "button" disabled>
+</form>
+</center>
+<script>
+function enableSubmit(){
+    if(document.getElementById("checkboxAD").checked){
+        document.getElementById("submitAD").disabled=false;
+    }
+    else{
+        document.getElementById("submitAD").disabled=true;
+    }
+    
+}	
+</script>
+
+</center>
+
+
+</body>
+</html>

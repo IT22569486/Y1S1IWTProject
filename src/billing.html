@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Billing Details</title>
+		<link rel="stylesheet" href="billing.css">
+			
+	</head>
+	
+	
+	<body>
+
+		<script>
+            function confirm()
+            {
+                alert("Data successfully Submitted");
+
+            }
+        </script>
+
+	<div class="container">
+	
+	<form  action="submitBilling.php" method="POST">
+	
+	<div class="row">
+		<div class="col">
+		
+			<h3 class="title">billing address</h3>
+			
+			<div class="inputbox">
+				<span>Purpose :</span>
+				<select name = 'purpose' id = 'select'>
+				<option value = "Subscription" selected>Subscription</option>
+	            <option value = "Donation">Donation</option>
+		        <option value = "Purchase">Purchase</option>
+
+				</select>
+			</div>
+			
+			<div class="inputbox">
+				<span>first name :</span>
+				<input type='text' name='info1' placeholder="Saduni"  required>
+			</div>
+			<div class="inputbox">			
+				<span>last name :</span>
+				<input type='text' name='info2' placeholder="Perera"  required>
+			</div>
+			<div class="inputbox">	
+				<span>mobile number :</span>
+				<input type='phone' name='info3' placeholder="0718567429" pattern="[0-9]{10}" required>
+			</div>
+			<div class="inputbox">	
+				<span>e-mail :</span>
+				<input type='email' name='info4' placeholder="abc@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+			</div>
+			<div class="inputbox">
+				<span>address :</span>
+				<input type='text' name='info5' placeholder="room-street-locality" required>
+			</div>
+			<div class="inputbox">
+				<span>city :</span>
+				<input type='text' name='info6' placeholder="homagama" required>
+			</div>
+			<div class="flex">
+				<div class="inputbox">
+					<span>state :</span>
+					<input type='text' name='info7' placeholder="colombo" required>	
+				</div>
+				<div class="inputbox">
+					<span>zip code :</span>
+					<input type='text' name='info8' placeholder="145687" required>	
+				</div>
+			</div>
+		</div>
+		
+		<div class="col">
+		
+			<h3 class="title">payment</h3>
+			<div class="inputbox">
+				<span>cards accepted :</span>
+				<img class="img" src="cards1.png">
+			</div>
+			<div class="inputbox">			
+				<span>name on card :</span>
+				<input type='text' name='cardname' placeholder="Ms.S.A.Perera"  required>
+			</div>
+			<div class="inputbox">	
+				<span>credit card number :</span>
+				<input type='number' name='cardno' placeholder="1111-2222-3333-4444" pattern="[0-9\s]{13,19}" required>
+			</div>
+			<div class="inputbox">	
+				<span>exp month :</span>
+				<input type='text' name='expmon' placeholder="january" required>
+			</div>
+			
+			<div class="flex">
+				<div class="inputbox">
+					<span>exp year :</span>
+					<input type='number' name='expyear' placeholder="2023" required>	
+				</div>
+				<div class="inputbox">
+					<span>CVV :</span>
+					<input type='text' name='cvv' placeholder="1234" required>	
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<input type="submit" value="proceed to checkout" class="submit-btn" onclick = "confirm()" >
+	</form>
+
+</div>
+</body>
+</html>

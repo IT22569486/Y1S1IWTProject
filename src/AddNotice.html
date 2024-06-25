@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Online Pet Care System</title>
+	<link rel="stylesheet"  href="noticeBoard.css" >
+
+</head>
+<body>
+
+<h1>PetsStop.lk</h1><br>
+
+<center>
+
+<h2>Add a Notice</h2>
+<center>
+<form action="SubmitNotice.php" class="form1" method="POST">
+	Notice Topic:
+	<input type="text" name="topic" placeholder="Notice Topic" required><br><br>
+	Description:
+	<textarea type="textarea" name="des" placeholder="Description" required></textarea><br><br>
+	Accept the Advertising terms and conditions <input type="checkbox" id="checkboxNo"  onclick="enableSubmitNo()"><br><br>
+	<input type="submit" id="submitNo" value="Submit" class= "button" disabled>
+</form>
+</center>
+<script>
+function enableSubmitNo(){
+    if(document.getElementById("checkboxNo").checked){
+        document.getElementById("submitNo").disabled=false;
+    }
+    else{
+        document.getElementById("submitNo").disabled=true;
+    }
+    
+}
+</script>	
+
+<center>
+
+<hr>
+
+
+
+</body>
+</html>

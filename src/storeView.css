@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family:sans-serif;
+    color : #242424;
+    background-image:url('bg2.webp');
+    margin:0;
+    padding:0;
+}
+.header {
+	background: linear-gradient(#3d251e, #80471C);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	border-bottom-left-radius: 60px;
+	padding: 20px 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: 0.6s;
+	z-index: 100000;
+}
+
+.header.sticky {
+	padding: 5px 100px;
+	background: #000;
+}
+
+.header.sticky .logo,
+.header.sticky ul li a {
+	color: white;
+}
+
+.header .navbar {
+	display: flex;
+	align-items: center;
+}
+
+.header .navbar .logo {
+	font-size: 36px;
+	font-weight: bold;
+	color: white;
+	margin-right: 20px;
+}
+
+.header .navbar ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	display: flex;
+}
+
+.header .navbar ul li {
+	margin-left: 15px;
+	font-size: 20px;
+}
+
+.header .navbar ul li a {
+	display: block;
+	color: white;
+	text-decoration: none;
+	font-family: Arial;
+	font-weight: bold;
+	padding: 10px;
+	transition: 0.6s;
+	text-align: center;
+}
+.header .navbar ul li a:hover {
+	
+	background-color:#C5C6D0;
+}

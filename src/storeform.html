@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Add To Cart</title>
+		<link rel="stylesheet" href="storeform.css">
+		
+		
+	</head>
+	
+	<body>
+       
+
+		<div>
+		<a href= "storeView.php"><button class="btn-primary" type="button" style = "float:right">View Cart</button></a>
+		
+		</div>
+
+
+
+		<div>
+		<a href= "viewBillinginfo.php"><button class="btn-primary" type="button" style = "float:right">Billing Details</button></a>
+			
+			</div>
+		
+		
+		
+	
+	<div class = "sform">
+
+	<h2>ADD TO CART</h2>
+	
+	<form action="submitaddtocart.php" method= "POST" id='details'>
+	
+    <label>Product Type :</label><br><br>
+    <input type='text' name='txt1' id="type" placeholder="Product Type"  required> <br><br>
+	<label>Product Code :</label><br><br>
+	<input type='text' name='txt2' id="code" placeholder="Product Code"  required> <br><br>
+	<label>Product Name :</label><br><br>
+	<input type='text' name='txt3' id="name" placeholder="Product Name"  required><br><br>
+	<label>Quantity :</label><br><br>
+	<input type='text' name='txt4' id="qty" placeholder="Quantity" required><br><br>
+    <label>Specifications :</label><br><br>
+    <textarea name='txt5' id="spec" rows="4" cols="50"></textarea><br><br>
+	
+	I accept terms & conditions <input type="checkbox" id="checkboxSt"  onclick="enableSubmitAddtoStore()"><br><br>
+	
+	<input type="submit" id = "submit" disabled>
+	
+    </form>
+	<script>
+	function enableSubmitAddtoStore(){
+    if(document.getElementById("checkboxSt").checked){
+        document.getElementById("submit").disabled=false;
+    }
+    else{
+        document.getElementById("submit").disabled=true;
+    }
+	}
+    </script>
+
+	</body>
